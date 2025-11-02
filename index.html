@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyDash — Smart Weather Forecasts</title>
+
+    <!-- Optional: font preload for a cleaner initial render -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Fallback styling for no-JS users (keeps branding visible) -->
+    <style>
+      /* Minimal safe fallback for users with JS disabled */
+      .noscript-brand {
+        font-family: "Poppins", sans-serif;
+        background: #07102a;
+        color: #e6f0ff;
+        padding: 2rem;
+        text-align: center;
+      }
+      .noscript-brand h1 { margin: 0 0 .25rem 0; font-size: 1.25rem; }
+      .noscript-brand p { margin: 0; opacity: .85; font-size: .95rem; }
+    </style>
+  </head>
+
+  <body>
+    <!-- React root -->
+    <div id="root"></div>
+
+    <!-- Shown only if JavaScript is disabled -->
+    <noscript>
+      <div class="noscript-brand">
+        <h1>🌦️ SkyDash — Smart Weather Forecasts</h1>
+        <p>For the full interactive dashboard, please enable JavaScript.</p>
+      </div>
+    </noscript>
+
+    <!-- Vite/React entry -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
